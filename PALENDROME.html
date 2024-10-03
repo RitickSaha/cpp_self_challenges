@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>PALENDROME</title>
+        <script>
+            function find()
+            {
+                var a = parseInt(document.getElementById('a').value);
+                var i,digit,number=0;
+                i=a;
+                while(a!=0)
+                {
+                    digit=a%10;
+                    a=a-digit;
+                    a=a/10;
+                    number=(number*10)+digit;
+                }
+                if(i=number)
+                    {alert"No. Entered:" + i +"     No. generated:" + number +"ITS A PALENDROME!");}
+                else
+                    {alert("ITS NOT A PALENDROME");}
+            }
+        </script>
+    </head>
+    <body>
+
+                <form name="F1">
+                    <input type ="TEXT" value="ENTER THE NUMBER" id='a'>
+                    <input type="button" value="FIND" onclick="find()">
+                </form>
+    </body> 
+</html>

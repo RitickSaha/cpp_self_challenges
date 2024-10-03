@@ -1,0 +1,34 @@
+1.  Select * emp;
+2.  select * from dep;
+3.  select ename,sal from emp;
+4.  select dptno,emp,mgr from emp order by dptno desc;
+5.  select ename,loc from dept;
+6.  select ename,dptno from emp where dptno=20;
+7.  select ename from emp where sal>1000;
+8.  select ename,dptno from emp where job='CLERK' dptno=20;
+9.  select ename from emp where job in('Annalyst','Salesman');
+10. select ename hiredate from emp where hiredate<'31-Sep-1919';
+11. select ename from emp where job<>'MANAGER';
+12. select ename from emp where job not in'MANAGER';
+13. select ename from emp where empno in(272942,....);
+14. select empname from emp where depno not in(182,202,2...)
+15. select ename sal from emp where sal between 1000 and 2000;
+16. select ename,comm from emp where ename emp where comm is not null;
+18. select ename from emp where sal>2000 and comm is NULL;
+19. select enaame from emp where ename like 'S%';
+20. select ename,sal,sal*10/100"pf" from emp;
+21. select ename,sal from emp order by sal;
+22. select ename,sal,deptno from emp order by deptno decs sal;
+23. select ename ename,deptno,sal from emp where sal>comm;
+24. select ename||'has worked in position of job'||job||'in dept '||deptno from emp where job='clerk' and deptno=20;
+25. select ename,hiredate from emp hiredate brtween TO_DATE('&STARTING,'DD-MM-YYYY') and TO_DATE('&ENDING','DD-MM-YYYY')
+26. select ename,sal,(sal+(sal*15/100)) "IN $" from emp;
+27. select ename||'    '||job"Employee and job" from emp;
+29. select ename||'    '('||job||')'Employee and job" from emp;
+30. select ename,job,from emp where job=upper("&searched_job") ;
+31. select ename,hiredate from emp where deptno=30;
+32. select ename,sal,hiredate'add_months(Hiredate,12)"salary review" from emp;
+33. select to_char(Tod_date('&today','DD-MM-YYYY')) from dual;
+34. select empname,(sysdate-hiredate)/365"Year" from emp;
+35. select min(sal),max(sal),avg(sal) from emp;
+36. select min(sal),max(sal).job from emp group by job;

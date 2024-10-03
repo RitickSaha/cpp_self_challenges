@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--Create an Html document For maximum  among 3 numbers using getelementid and innerhtml-->
+     <center>ENTER THE NUMBER:<input type="text" id="fst"><br>
+        ENTER THE NUMBER:<input type="text" id="snd"><br>
+        ENTER THE NUMBER:<input type="text" id="thd"><br>
+     <input type="button" onclick="find()" value="Submit">
+          <br><br>
+    Result=<input type="text" id="result">
+    </center>
+    </body>
+<script>
+    function find()
+    {
+    var a = parseInt(document.getElementById("fst").value);
+    var b = parseInt(document.getElementById("snd").value);
+    var c = parseInt(document.getElementById("thd").value);
+    var result=0;
+    if(c>=b>=a)
+     result=c;
+    else if(b>=a)
+     result=b;
+    else 
+    result=a;
+    document.getElementById("result").value=""+result;
+    }
+</script>
+</html>
